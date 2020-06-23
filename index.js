@@ -1,14 +1,6 @@
 import Bird from "./bird.js";
 import Pipe from "./pipe.js";
 let x = document.getElementById("game");
-if (
-  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-    navigator.userAgent
-  )
-) {
-  x.width = window.innerWidth;
-  x.height = window.innerHeight;
-}
 let ctx = x.getContext("2d");
 let background = document.getElementById("background");
 let bird = new Bird();
