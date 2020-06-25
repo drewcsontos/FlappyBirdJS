@@ -17,6 +17,15 @@ if (
     navigator.userAgent
   )
 ) {
+  document.addEventListener(
+    "touchmove",
+    function (event) {
+      if (event.scale !== 1) {
+        event.preventDefault();
+      }
+    },
+    false
+  );
   x.addEventListener("touchend", function () {
     if (bird.speed < 60) bird.speed = 120;
   });
