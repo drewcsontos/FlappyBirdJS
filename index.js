@@ -17,25 +17,6 @@ if (
     navigator.userAgent
   )
 ) {
-  var lastTouchEnd = 0;
-  document.addEventListener(
-    "touchend",
-    function (event) {
-      var now = new Date().getTime();
-      if (now - lastTouchEnd <= 300) {
-        event.preventDefault();
-      }
-      lastTouchEnd = now;
-    },
-    false
-  );
-  document.addEventListener(
-    "touchmove",
-    function (event) {
-      event.preventDefault();
-    },
-    false
-  );
   x.addEventListener("touchend", function () {
     if (bird.speed < 60) bird.speed = 120;
   });
