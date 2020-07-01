@@ -2,8 +2,8 @@ export default class Pipe {
   constructor(x) {
     this.x = x;
     this.random = Math.random() * 175 - 75;
-    this.rect1 = { x: this.x, y: -200 + this.random, width: 100, height: 400 };
-    this.rect2 = { x: this.x, y: this.random + 375, width: 100, height: 400 };
+    this.rect1 = { x: this.x, y: -200 + this.random, width: 90, height: 390 };
+    this.rect2 = { x: this.x, y: this.random + 375, width: 90, height: 390 };
     this.scored = false;
   }
   update(deltatime) {
